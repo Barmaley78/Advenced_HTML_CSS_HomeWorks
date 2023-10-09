@@ -1,0 +1,7 @@
+$colorSite: #F16D7F;
+$widthSite: 1140px;
+$widthSiteTablet: 768px;
+$widthSitePhone: 384px;
+$productGripGap: 16px;
+$quantityProductAtString: 3;
+$widthProductGrip: (($widthSite - ( $productGripGap * ($quantityProductAtString - 1))) / $quantityProductAtString);
