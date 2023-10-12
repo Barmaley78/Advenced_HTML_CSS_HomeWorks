@@ -1,0 +1,11 @@
+@mixin centerEvaluate ($width) {
+    padding-left: calc(50% - $width / 2);
+    padding-right: calc(50% - $width / 2);
+}
+
+@mixin textDecoration ($weight, $size, $lineH:normal, $style:normal) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lineH;
+    font-style: $style;
+}
