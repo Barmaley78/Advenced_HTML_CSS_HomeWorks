@@ -204,6 +204,7 @@ a {
   font-size: 16px;
   line-height: normal;
   font-style: normal;
+  padding: 14px 39px;
   border: 1px solid #F16D7F;
 }
 .sale__button:hover {
