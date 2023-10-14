@@ -1,4 +1,14 @@
+summary {
+    display: block;
+}
+
+summary::-webkit-details-market {
+    display: none;
+}
+
 .sorting {
+    display: flex;
+    flex-direction: row;
     background-color: white;
     border: 1px solid $colorProductsShopingBorder;
     padding-top: 64px;
@@ -12,37 +22,146 @@
     align-items: center;
 }
 
-.carusel {
-    height: 43px;
-    padding-bottom: 95px;
+.filter-sort {
+    height: 132px;
+    padding-top: 39px;
+    box-sizing: border-box;
     position: relative;
-    // background: $colorProductsCarnavalBG;
+    display: flex;
+    gap: 30px;
+}
+
+.filter {
+    box-sizing: border-box;
+    padding-top: 13px;
+    width: 360px;
+    position: relative;
+    z-index: 10;
+    &__content {
+        position: absolute;
+        background-color: #fff;
+        padding-top: 0px;
+        padding-right: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+    }
+    &[open] {
+        background: white;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, $alpha: 0.21);
+    }
+    &[open] .filter__heading {
+        color: $colorSite;
+    }
+    &[open] path {
+        fill: $colorSite;
+    }
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        padding-left: 16px;
+    }
+    &__heading {
+        @include textDecoration (600, 14px, 17px);
+        color: black;
+    }
+    &__item {
+        margin-top: 16px;
+    }
+    &__item[open] .filter__head {
+        color: $colorSite;
+    }
+    &__head {
+        @include textDecoration (400, 14px, 17px);
+        color: $colorMobileMenuLink;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid $colorMobileMenuBG;
+        border-left: 5px solid $colorSite;
+    }
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 24px 16px;
+    }
+    &__link {
+        @include textDecoration (400, 14px, 17px);
+        color: $colorMobileMenuLink;
+        &:hover {
+            color: $colorSite;
+        }
+    }
+}
+
+.sort {
+    display: flex;
+    gap: 18px;
+    padding-top: 12px;
+    &__details {
+        position: relative;
+    }
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__check {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        @include textDecoration (400, 14px, 16px);
+        color: $colorMobileMenuLink;
+    }
+    &__heading {
+        @include textDecoration (600, 14px, 17px);
+        color: $colorMobileMenuLink;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: absolute;
+        left: -9px;
+        top: 30px;
+        background: white;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, $alpha: 0.21);
+        padding: 7px 30px 11px 9px;
+    }
+}
+
+.pagination {
+    padding-bottom: 95px;
     display: flex;
     justify-content: center;
     align-items: center;
     &__arrow {
-        background: rgba(42, 42, 42, 0.15);
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 43px;
-        height: 43px;
-        position: absolute;
+        width: 16px;
+        height: 16px;
         &:hover path {
             fill: $colorSite;
-        }
-        &__left {
-            left: 0
-        }
-        &__right {
-            right: 0
         }
     }
 }
 
 .page {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 43px;
+    width: 284px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     gap: 10px;
+    border: 1px solid $colorProductsShopingBorder;
+    &__link {
+        color: $colorPaginationLink;
+        @include textDecoration (300, 16px);
+    }
+    &__devider {
+        color: $colorPaginationLink;
+    }
 }
