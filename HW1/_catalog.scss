@@ -38,6 +38,8 @@ summary::-webkit-details-market {
     position: relative;
     z-index: 10;
     &__content {
+        width: 100%;
+        box-sizing: border-box;
         position: absolute;
         background-color: #fff;
         padding-top: 0px;
@@ -117,12 +119,14 @@ summary::-webkit-details-market {
         color: $colorMobileMenuLink;
     }
     &__box {
+        z-index: 10;
+        min-width: 80px;
         display: flex;
         flex-direction: column;
         gap: 8px;
         position: absolute;
         left: -9px;
-        top: 30px;
+        top: 22px;
         background: white;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, $alpha: 0.21);
         padding: 7px 30px 11px 9px;

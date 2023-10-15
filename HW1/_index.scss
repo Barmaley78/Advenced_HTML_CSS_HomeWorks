@@ -42,6 +42,7 @@ a {
     &__checkbox:checked~.mobile-menu {
         right: 0;
     }
+    &__link:hover {}
 }
 
 .mobile-menu {
@@ -120,6 +121,7 @@ a {
     &__item {
         position: relative;
         display: block;
+        // z-index: -10;
         &__add {
             position: absolute;
             top: 188px;
@@ -145,17 +147,14 @@ a {
         }
         &__heading {
             color: black;
-            font-family: Lato;
             @include textDecoration (400, 13px);
         }
         &__text {
             color: $colorPoructItemAbout;
-            font-family: Lato;
             @include textDecoration (300, 14px);
         }
         &__price {
             color: $colorSite;
-            font-family: Lato;
             @include textDecoration (400, 16px);
         }
     }
