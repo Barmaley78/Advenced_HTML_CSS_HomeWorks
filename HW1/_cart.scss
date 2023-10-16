@@ -101,19 +101,23 @@
     }
     
     .cart__item__button {
-        background-color: transparent;
-        border: 2px solid #EAEAEA;
-        color: #000;
-        font-size: 14px;
-        font-weight: 300;
-        width: 235px;
-        height: 50px;
+        border: 1px solid $colorCartCostText;
+        color: $colorCartCostText;
+        background: white;
+        @include textDecoration (300, 11px);
+        padding: 11px 15px;
+    }
+    
+    .cart__item__button:hover {
+        border: 1px solid $colorSite;
+        color: white;
+        background: $colorSite;
     }
     
     .quantity-count {
-        position: absolute;
-        left: 153px;
-        top: 225px;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
         &>input {
             width: 44px;
             height: 25px;
@@ -137,6 +141,12 @@
         border: 1px solid #A4A4A4;
         color: black;
         @include textDecoration (300, 14px);
+    }
+    
+    .left__btn:hover {
+        border: 1px solid $colorSite;
+        color: white;
+        background: $colorSite;
     }
     
     .address {
@@ -184,4 +194,10 @@
         border: 0px solid $colorSite;
         color: white;
         @include textDecoration (300, 16px);
+    }
+    
+    .right__btn:hover {
+        border: 1px solid $colorSite;
+        color: $colorSite;
+        background: white;
     }

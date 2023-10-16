@@ -1,0 +1,87 @@
+    .reg-content {
+        margin-top: 64px;
+        margin-bottom: 96px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            width: 32%;
+        }
+        &__right {
+            width: 57%;
+        }
+        &__form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 21px;
+        }
+        &__header {
+            color: $colorElementBG;
+            @include textDecoration (300, 16px);
+        }
+        &__input {
+            padding-top: 13px;
+            padding-bottom: 16px;
+            padding-left: 17px;
+            color: $colorCartFormText;
+            @include textDecoration (300, 13px);
+        }
+        &__radio {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        &__radio-btn {
+            margin-right: 10px;
+        }
+        &__radio-label {
+            color: $colorCartFormText;
+            @include textDecoration (300, 11px);
+        }
+        &__text {
+            padding-top: 15px;
+            padding-bottom: 39px;
+            color: $colorCartFormText;
+            @include textDecoration (300, 13px);
+        }
+        &__button {
+            width: 46%;
+            padding: 16px 29px;
+            background: $colorSite;
+            color: white;
+            border: 1px solid white;
+        }
+        &__button:hover {
+            color: $colorSite;
+            border: 1px solid $colorSite;
+            background: white;
+        }
+        &__button:hover path {
+            fill: $colorSite;
+        }
+        &__title {
+            padding-bottom: 22px;
+            color: black;
+            @include textDecoration (300, 24px);
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        &__list-item:before {
+            content: "\2714";
+        }
+        &__list-item {
+            list-style-type: none;
+            color: black;
+            @include textDecoration (300, 24px);
+        }
+    }
+    
+    .devider {
+        padding-left: 23px;
+    }

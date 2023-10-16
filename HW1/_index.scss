@@ -42,7 +42,9 @@ a {
     &__checkbox:checked~.mobile-menu {
         right: 0;
     }
-    &__link:hover {}
+    &__link:hover path {
+        fill: $colorSite;
+    }
 }
 
 .mobile-menu {

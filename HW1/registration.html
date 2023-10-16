@@ -32,7 +32,7 @@
                     </a>
             </div>
             <div class="header__right">
-                <label for="menu_check"><svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <label class="header__checkbox-label" for="menu_check"><svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8"/>
                     </svg>
                     </label>
@@ -99,85 +99,60 @@
     </section>
 
     <section class="prod__heading center">
-        <H2 class="prod__heading__title">SHOPPING CART</H2>
+        <H2 class="prod__heading__title">REGISTRATION</H2>
     </section>
 
-    <section class="cart__products center">
-        <div class="cart__products__content">
-            <div class="cart__products__content__left">
-
-                <div class="cart__products__item">
-                    <img src="img/product1.png" alt="product image" class="cart__products__img">
-                    <div class="cart__products__item__content">
-                        <div class="drop">
-                            <a href="" class="drop__button">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757"/>
-                                </svg></a>
+    <section class="registration center">
+        <div class="reg-content">
+            <div class="reg-content__left">
+                <form action="#" class="reg-content__form">
+                    <legend class="reg-content__header">Your Name</legend>
+                    <input type="text" class="reg-content__input" name="first-name" placeholder="First name" required>
+                    <input type="text" class="reg-content__input" name="second-name" placeholder="Second name" required>
+                    <div class="reg-content__radio">
+                        <div class="d1"><input type="radio" class="reg-content__radio-btn" name="male_sex" id="male_sex">
+                            <label for="male_sex" class="reg-content__radio-label">Male</label>
                         </div>
-                        <h3 class="cart__products__item__heading">MANGO PEOPLE T-SHIRT</h3>
-                        <p class="cart__products__item__text">Price: <span class="cart__products__item__price">$300</span></p>
-                        <p class="cart__products__item__text">Color: Red</p>
-                        <p class="cart__products__item__text">Size: Xl</p>
-                        <div class="quantity-count">
-                            <p class="cart__products__item__text">Quantity:</p>
-
-                            <input type="number" value="1" min="1" name="quantity1" id="quantity1">
+                        <div class="d2"><input type="radio" class="reg-content__radio-btn" name="female_sex" id="female_sex">
+                            <label for="female_sex" class="reg-content__radio-label">Female</label>
                         </div>
                     </div>
-                </div>
-
-                <div class="cart__products__item">
-                    <img src="img/product2.png" alt="product image" class="cart__products__img">
-                    <div class="cart__products__item__content">
-                        <div class="drop">
-                            <a href="" class="drop__button">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757"/>
-                                </svg></a>
-                        </div>
-                        <h3 class="cart__products__item__heading">MANGO PEOPLE T-SHIRT</h3>
-                        <p class="cart__products__item__text">Price: <span class="cart__products__item__price">$300</span></p>
-                        <p class="cart__products__item__text">Color: Red</p>
-                        <p class="cart__products__item__text">Size: Xl</p>
-                        <div class="quantity-count">
-                            <p class="cart__products__item__text">Quantity:</p>
-
-                            <input type="number" value="1" min="1" name="quantity2" id="quantity2">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cart__products__content__left__buttons">
-                    <button class="left__btn">CLEAR SHOPPING CART</button>
-                    <button class="left__btn">CONTINUE SHOPPING</button>
-                </div>
-            </div>
-
-
-            <div class="cart__products__content__right">
-
-                <form action="#" class="cart__products__content__right__item">
-                    <fieldset class="cart__products__content__right__item__data">
-                        <legend class="cart__products__content__right__heading">SHIPPING ADRESS</legend>
-                        <input type="text" name="Country" id="Country" placeholder="Country" required>
-                        <input type="text" name="State" id="State" placeholder="State" required>
-                        <input type="text" name="Postcode" id="Postcode" placeholder="Postcode / Zip" required>
-
-                    </fieldset>
-                    <button type="submit" class="cart__item__button">GET A QUOTE</button>
                 </form>
-
-                <div class="cost">
-                    <p class="cost__text">SUB TOTAL<span class="cost__text__price">$900</span></p>
-                    <p class="cost__total">GRAND TOTAL <span class="cost__total__dif-color">$900</span> </p>
-                    <div class="cost__line"></div>
-                    <button class="right__btn">PROCEED TO CHECKOUT</button>
-                </div>
+                <form action="#" class="reg-content__form">
+                    <legend class="reg-content__header">Login Dtails</legend>
+                    <input type="email" class="reg-content__input" name="first-name" placeholder="E-mail" required>
+                    <input type="email" class="reg-content__input" name="first-name" placeholder="E-mail" required>
+                </form>
+                <p class="reg-content__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                <button class="reg-content__button">
+                    JOIN NOW
+                    <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z" fill="white"/>
+                        </svg>
+                        
+                </button>
             </div>
-
+            <div class="reg-content__right">
+                <h2 class="reg-content__title">LOYALTY HAS ITS PERKS</h2>
+                <h3 class="reg-content__title">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</h3>
+                <ul class="reg-content__list">
+                    <li class="reg-content__list-item"><span class="devider">15% off welcome offer</span></li>
+                    <li class="reg-content__list-item"><span class="devider">Free shipping, returns and exchanges on all orders</span></li>
+                    <li class="reg-content__list-item"><span class="devider"></span>$10 off a purchase on your birthday</span>
+                    </li>
+                    <li class="reg-content__list-item"><span class="devider"></span>Early access to products</span>
+                    </li>
+                    <li class="reg-content__list-item"><span class="devider"></span>Exclusive offers & rewards</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
+
+
+
+
 
 
     <footer class="footer">
