@@ -72,6 +72,7 @@
             position: relative;
             display: flex;
             flex-direction: row;
+            max-height: 303px;
             box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
             &__content {
                 position: relative;
@@ -131,8 +132,13 @@
     
     .drop {
         position: absolute;
-        left: 350px;
+        right: 28px;
         top: 28px;
+        &__button {
+            width: 18px;
+            height: 18px;
+            box-sizing: border-box;
+        }
     }
     
     .left__btn {
@@ -156,6 +162,7 @@
     
     .cost {
         width: 78%;
+        height: 133px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -200,4 +207,100 @@
         border: 1px solid $colorSite;
         color: $colorSite;
         background: white;
+    }
+    
+    @media (max-width: 1280px) {
+        .cart__products {
+            &__content {
+                flex-direction: column;
+                &__left {
+                    width: 100%;
+                    &__buttons {
+                        justify-content: center;
+                        gap: 48px;
+                        margin-bottom: 64px;
+                    }
+                }
+                &__right {
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 15px;
+                    &__item {
+                        width: 47%;
+                    }
+                }
+            }
+            &__img {
+                width: 34%;
+            }
+            &__item {
+                &__content {
+                    width: 66%;
+                }
+            }
+        }
+        .cost {
+            width: 47%;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .cart__products {
+            margin-top: 39px;
+            margin-bottom: 96px;
+            &__content {
+                &__left {
+                    &__buttons {
+                        gap: 9px;
+                        margin-bottom: 48px;
+                    }
+                }
+                &__right {
+                    flex-direction: column;
+                    &__item {
+                        width: 100%;
+                        margin-bottom: 48px;
+                    }
+                }
+            }
+            &__img {
+                width: 40%;
+            }
+            &__item {
+                height: 188px;
+                &__content {
+                    width: 60%;
+                }
+                &__heading {
+                    width: 67%;
+                    padding-bottom: 25px;
+                    @include textDecoration (400, 16px);
+                }
+                &__text {
+                    padding-bottom: 4px;
+                    @include textDecoration (400, 14px);
+                }
+                &__price {
+                    @include textDecoration (400, 14px);
+                }
+            }
+        }
+        .left__btn {
+            background: transparent;
+            padding: 9px 18px;
+            @include textDecoration (400, 12px);
+        }
+        .drop {
+            right: 17px;
+            &__button {
+                width: 10px;
+                height: 10px;
+            }
+        }
+        .cost {
+            width: 100%;
+            height: 214px;
+            box-sizing: border-box;
+        }
     }
