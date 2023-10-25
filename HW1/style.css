@@ -495,12 +495,12 @@ a {
 
 @media (max-width: 1280px) {
   .center {
-    padding-left: calc(50% - 384px);
-    padding-right: calc(50% - 384px);
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
   }
   .advertising {
-    padding-left: calc(50% - 384px);
-    padding-right: calc(50% - 384px);
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
   }
   .advertising__content {
     padding-left: 39px;
@@ -626,6 +626,17 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.carnaval-content {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carnaval-content img {
+  height: auto;
+  width: 100%;
+  flex-shrink: 0;
 }
 .carnaval__arrow {
   background: rgba(42, 42, 42, 0.15);
@@ -780,8 +791,8 @@ summary {
   .carnaval__arrow {
     top: 288px;
   }
-  .carnaval__img {
-    height: 565px;
+  .carnaval-content img {
+    width: 80%;
   }
   .shoping {
     margin: 0px auto 0;
@@ -794,8 +805,8 @@ summary {
     align-items: center;
     gap: 32px;
   }
-  .carnaval__img {
-    height: 454px;
+  .carnaval-content img {
+    width: 100%;
   }
   .shoping__about {
     max-width: 326px;
@@ -943,7 +954,6 @@ summary::-webkit-details-market {
 }
 .sort__box {
   z-index: 10;
-  min-width: 80px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -1288,6 +1298,7 @@ summary::-webkit-details-market {
     width: 100%;
     flex-direction: row;
     justify-content: center;
+    align-items: baseline;
     gap: 15px;
   }
   .cart__products__content__right__item {
